@@ -14,7 +14,6 @@ int main(void)
     printf("Value   : %s\n", name);
     printf("Address : %p\n", &name);
 
-    /* Using by value: New address in memory */
     name = clean(name);
 
     if (name == NULL) {
@@ -26,6 +25,9 @@ int main(void)
     return 0;
 }
 
+/**
+ * Return a string (aka multiple address char)
+ */
 char* clean(char* input)
 {
     printf("\nCleaning var\n");
